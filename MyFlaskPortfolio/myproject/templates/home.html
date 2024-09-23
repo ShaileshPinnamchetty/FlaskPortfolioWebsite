@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="top-bar" id="nav-bar-id">
+    <a class="nav-link active" href="{{ url_for('index') }}">Home</a>
+    <a class="nav-link" href="{{ url_for('components.about_me') }}">About me</a>
+    <a class="nav-link" href="{{ url_for('components.work_timeline') }}">Work history</a>
+    <a class="nav-link" href="{{ url_for('components.addMessage') }}">Contact</a>
+    </div>
+<div class="banner-text">
+  <h1><span class="typing"></span></h1>
+</div>
+<script src="../static/typed.js"></script>
+<script>
+        var typed = new Typed('.typing', {
+        strings: ["Hi...", "I'm Shailesh Pinnamchetty", "I am a QA Engineer!"],
+        typeSpeed: 60,
+        backSpeed: 30,
+        loop: true
+        });
+    </script>
+
+{% endblock %}

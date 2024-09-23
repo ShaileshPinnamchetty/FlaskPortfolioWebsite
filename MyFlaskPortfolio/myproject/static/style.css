@@ -1,0 +1,561 @@
+@font-face {
+  font-family: 'VT323';
+  src: URL("VT323-Regular.ttf") format('truetype');
+}
+
+/*html, body {
+font-size: 62.5%;
+height: 100%;
+font-family: 'VT323', monospace;
+}*/
+html {
+font-family: 'VT323', monospace;
+font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* The image used */
+  background-image: url("space.jpg");
+  overflow: hidden;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+
+}
+
+.banner-text h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    color: #1CFF00;
+    font-size: 10.4rem;
+    font-weight: normal;
+}
+
+.top-bar {
+  text-align:center;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.top-bar a{
+
+  color: #1CFF00;
+  font-size: 3.2rem;
+  font-weight: normal;
+  padding: 30px;
+  text-decoration: none;
+}
+
+.jumbotron {
+    margin: 90px auto auto auto;
+
+    color: #1CFF00;
+    font-size: 2.4rem;
+    font-weight: normal;
+    padding-left: 30px;
+}
+
+.listOfMessages {
+    margin: 90px auto auto auto;
+    background: rgba(0, 0, 0, 0.7);
+    color: #1CFF00;
+    font-size: 2.4rem;
+    font-weight: normal;
+    padding-left: 30px;
+}
+
+.jumbotron .invalid-feedback span{
+padding: 5px;
+background: #fff;
+border-radius: 10px;
+border: 3px solid red;
+color: red;
+}
+
+.head-container *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-align: end;
+}
+
+.head-container h3{
+font-size: 2.4rem;
+color: #fff;
+margin: 0 10px;
+}
+
+.head-container span a{
+font-size: 3.2rem;
+color: #1CFF00;
+}
+
+.head-container {
+margin: 50px 50px 0 0;
+}
+
+.head-card{
+margin: auto;
+width: auto;
+box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+border-radius: 15px;
+background: rgba(255, 255, 255, 0.03);
+overflow: hidden;
+justify-content: center;
+align-items: center;
+border: 1px solid rgba(255, 255, 255, 0.5);
+backdrop-filter: blur(5px);
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 20px); }
+    100%   { transform: translate(0, -0px); }
+}
+
+.head-container .head-card .content{
+text-align: center;
+}
+
+.head-card .content h2{
+padding: 15px;
+font-size: 4.5rem;
+color: #1CFF00;
+}
+
+.container *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+.container {
+top: 10%;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+margin: 0;
+width: auto;
+padding: 0 0 190px 0;
+box-sizing: border-box;
+background: rgba(0, 0, 0, 0.7);
+}
+
+.container .card{
+position: relative;
+width: 320px;
+height: 420px;
+margin: 30px 15px 0 15px;
+box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+border-radius: 15px;
+background: rgba(255, 255, 255, 0.03);
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+border-top: 1px solid rgba(255, 255, 255, 0.5);
+border-left: 1px solid rgba(255, 255, 255, 0.5);
+backdrop-filter: blur(5px);
+}
+
+.container .card .content{
+padding: 10px;
+text-align: center;
+transform: translateY(0px);
+opacity: 1;
+transition: 0.5s;
+}
+/*Uncomment below code, change the opacity to 0, translateY to 100px above for hover effect in about me page*/
+/*.container .card:hover .content{
+transform: translateY(0px);
+opacity: 1;
+}*/
+
+.container .card .content h2{
+position: absolute;
+top: -70px;
+right: 30px;
+font-size: 9.6rem;
+color: rgba(255, 255, 255, 0.5);
+pointer-events: none;
+}
+
+.container .card .content h3{
+font-size: 3.2rem;
+color: #1CFF00;
+z-index: 1;
+}
+
+.container .card .content p{
+font-size: 2.4rem;
+color: #FFFFFF ;
+font-weight: 300;
+}
+
+.section-div {
+overflow: scroll;
+margin: 30px;
+padding-top: 20px;
+padding-bottom: 20px;
+width: 100%;
+height: 90%;
+opacity: 1;
+}
+
+section {
+width: 90%;
+height: auto;
+margin-left: auto;
+margin-bottom: 10px;
+float: right;
+border-radius: 15px;
+box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+background: rgba(255, 255, 255, 0.5);
+border-top: 1px solid rgba(255, 255, 255, 0.5);
+border-left: 1px solid rgba(255, 255, 255, 0.5);
+backdrop-filter: blur(5px);
+overflow: hidden;
+
+}
+
+.section-div .sections h2{
+position: absolute;
+top: -150px;
+font-size: 16rem;
+color: rgba(255, 255, 255, 0.2);
+pointer-events: none;
+}
+
+.section-div .sections h3{
+padding-left: 90px;
+padding-top: 60px;
+font-size: 9rem;
+color: #1CFF00;
+z-index: 1;
+margin-bottom: 0;
+margin-top: 0;
+}
+
+.section-div .sections h4{
+margin-top: 0;
+padding-left: 90px;
+color: #1CFF00;
+z-index: 1;
+}
+
+.section-div .sections ul{
+padding-left: 110px;
+color: #FFFFFF ;
+}
+
+.section-div .sections ul li{
+margin: 10px;
+font-size: 2.4rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.timeline-container {
+  overflow: scroll;
+  margin: 30px auto 50px auto;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0 50px 0;
+
+  background: rgba(0, 0, 0, 0.7);
+}
+.timeline {
+  overflow: hidden;
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto 100px auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+  margin: 50px;
+}
+.timeline ul li {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+
+  color: #1CFF00;
+  font-size: 4rem;
+  font-weight: bolder;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 2.4rem;
+  line-height: 30px;
+  font-weight: 300;
+}
+.timeline-content .date {
+  font-size: 2.4rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+@media only screen and (min-width: 768px) {
+
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: #1CFF00;
+  }
+}
+
+.form-textarea-field {padding:10px;
+  border-radius:10px;
+  font-family:inherit;
+  font-size: inherit;
+  }
+
+.form-string-field {padding:10px;
+  border-radius:10px;
+  font-family:inherit;
+  font-size: inherit;
+  width: 380px;
+}
+.form-submit {
+  border-radius:10px;
+background: #1CFF00;
+color: white;
+border-style: outset;
+border-color: #1CFF00;
+    font-family:inherit;
+  font-size: inherit;
+text-shadow:none;
+padding: 5px;
+color: black;
+}
+
+/* =======================================================*/
+/* About me cards floating animation */
+.container #one{
+animation-name: floating1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+    margin-top: 5px;
+}
+@keyframes floating1 {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 30px); }
+    100%   { transform: translate(0, -0px); }
+}
+
+.container #two{
+animation-name: floating2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+    margin-top: 5px;
+}
+@keyframes floating2 {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 30px); }
+    100%   { transform: translate(0, -0px); }
+}
+
+.container #three{
+animation-name: floating3;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+    margin-top: 5px;
+}
+@keyframes floating3 {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }
+}
+
+.container #four{
+animation-name: floating4;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+    margin-top: 5px;
+}
+@keyframes floating4 {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 20px); }
+    100%   { transform: translate(0, -0px); }
+}
+/* =======================================================*/
+
+@media only screen and (max-width: 768px){
+* {
+margin= 0;
+padding= 0;
+}
+html, body {
+font-size: 40%;
+height: 100%;
+}
+body {
+  height: 100%;
+  background-image: url("space.jpg");
+  overflow: scroll;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  background-position: center;
+}
+.banner-text h1{
+    top: 40%;
+}
+.top-bar a{
+  padding: 10px;
+}
+
+
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }
+}
+.container {
+top: 3%;
+padding: 0;
+}
+.container .card{
+width: 320px;
+height: auto;
+}
+.container #one{
+animation-name: none;
+}
+
+.container #two{
+animation-name: none;
+}
+
+.container #three{
+animation-name: none;
+}
+
+.container #four{
+animation-name: none;
+}
+
+.head-container{
+top: auto;
+margin: 15px 0 0 0;
+}
+
+.jumbotron {
+    height: 80%;
+    margin: 90px auto auto auto;
+    padding-left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
+.form-string-field {
+width: 285px;
+}
+.error-span {
+display: block;
+}
+}
+
+.active, .nav-link:hover {
+  background-color: #666;
+  color: white;
+}
+
+/*styling for uploadResume file*/
+.uploadResume {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #1CFF00;
+}
+
+.uploadResume *{
+margin: 10px;
+}

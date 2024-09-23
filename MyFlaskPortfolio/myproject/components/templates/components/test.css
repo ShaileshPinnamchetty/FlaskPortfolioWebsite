@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* The image used */
+  background-image: url("../../../static/space.jpg");
+  overflow: hidden;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  overflow: scroll;
+  border: 5px solid red;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+}
+
+.timeline {
+  background-color: #fff;
+  border: 5px solid red;
+  height: 5000px;
+  width: 50%;
+  margin: auto;
+}

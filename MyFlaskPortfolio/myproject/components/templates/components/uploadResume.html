@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="uploadResume" style="background: rgba(0, 0, 0, 0.7);">
+<h1>Click on the "Choose File" button to upload a file:</h1>
+
+<form action="/components/uploadResume" method="POST" enctype="multipart/form-data">
+  <div class="custom-file">
+  <input type="file" id="myFile" name="filename">
+  </div>
+  <input type="submit">
+</form>
+</div>
+{% endblock %}

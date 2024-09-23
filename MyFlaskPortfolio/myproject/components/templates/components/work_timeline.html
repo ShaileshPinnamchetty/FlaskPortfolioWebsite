@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="top-bar" id="nav-bar-id">
+    <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+    <a class="nav-link" href="{{ url_for('components.about_me') }}">About me</a>
+    <a class="nav-link active" href="{{ url_for('components.work_timeline') }}">Work history</a>
+    <a class="nav-link" href="{{ url_for('components.addMessage') }}">Contact</a>
+    </div>
+<div class="timeline-container">
+  <div class="timeline">
+    <ul class="outer-ul">
+      <li class="outer-list">
+        <div class="timeline-content">
+          <h3 class="date">Sept 2013 - Nov 2015</h3>
+          <h1>Syntel Pvt. Ltd.</h1>
+          <p>- Requirements Analysis</p>
+          <p>- Functional testing</p>
+          <p>- API automation</p>
+          <p>- Unix</p>
+        </div>
+      </li>
+      <li class="outer-list">
+        <div class="timeline-content">
+          <h3 class="date">Dec 2015 - Nov 2016</h3>
+          <h1>Miles Software Solutions Pvt. Ltd.</h1>
+          <p>- Selenium WebDriver</p>
+          <p>- Database testing</p>
+          <p>- UFT</p>
+        </div>
+      </li>
+      <li class="outer-list">
+        <div class="timeline-content">
+          <h3 class="date">Dec 2016 - Feb 2021</h3>
+          <h1>Larsen & Toubro Infotech</h1>
+          <p>- Python</p>
+          <p>- Database testing</p>
+          <p>- Selenium WebDriver</p>
+          <p>- CI/CD</p>
+        </div>
+      </li>
+      <li class="outer-list">
+        <div class="timeline-content">
+          <h3 class="date">Feb 2021 - Present</h3>
+          <h1>Morgan Stanley</h1>
+          <p>- Synthetic Monitoring</p>
+          <p>- Python</p>
+          <p>- API testing</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+{% endblock %}
